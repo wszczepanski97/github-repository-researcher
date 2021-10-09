@@ -1,0 +1,14 @@
+.jobOffers__scrollElement {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.jobOffers__noMoreJobOffersHeader {
+    color: #979cb0;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.64px;
+    text-align: center;
+    margin: 25px auto;
+  }
