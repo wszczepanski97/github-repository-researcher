@@ -1,5 +1,5 @@
 import InfiniteScroll from 'react-infinite-scroll-component';
-import styles from './OffersInfiniteScroll.module.css';
+import CircleLoaderContainer from '../../circleLoaderContainer/CircleLoaderContainer';
 
 interface ReposInfiniteScrollProps {
     children: React.ReactNode,
@@ -14,9 +14,8 @@ export const ReposInfiniteScroll = ({ children, dataLength, nextReposFunc, hasMo
             dataLength={dataLength}
             next={nextReposFunc}
             hasMore={hasMore}
-            loader={<h3> Loading...</h3>}
-            endMessage={<h4 className={styles.jobOffers__noMoreJobOffersHeader}>Nothing more to show</h4>}
-            className={styles.jobOffers__scrollElement}
+            loader={<CircleLoaderContainer text="Wait for repositories..."/>}
+            endMessage={<h4>Nothing more to show</h4>}
             scrollableTarget="scrolledOfferList"
         >
             {children}

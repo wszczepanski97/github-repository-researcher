@@ -1,15 +1,18 @@
 import { useState } from 'react';
-import { Flex, useColorModeValue } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import { Header } from '../header/Header';
 import { ReposListContainer } from '../reposListContainer/ReposListContainer';
+import CircleLoaderContainer from '../circleLoaderContainer/CircleLoaderContainer';
 
 const Home = () => {
   const [searchedRepository, setSearchedRepository] = useState('');
-  const bg = useColorModeValue("#ffffff", "#424242");
   return (
     <Flex direction="column">
       <Header searchedRepository={searchedRepository} onSearchedRepositoryChange={setSearchedRepository} />
-      <ReposListContainer searchedPhrase={searchedRepository} />
+      {searchedRepository.length > 2 ?
+        <ReposListContainer searchedPhrase={searchedRepository} /> : 
+        <CircleLoaderContainer text="Please fill in search bar in the top left corner"/>
+      }
     </Flex>
   );
 }
