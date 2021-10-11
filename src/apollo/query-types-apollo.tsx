@@ -45,6 +45,7 @@ query getRepositories($searchedPhrase: String!, $loadReposLimit: Int, $endCursor
       node {
         ... on Repository {
           id
+          url
           name
           url
           owner {

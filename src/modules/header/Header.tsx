@@ -12,7 +12,7 @@ export const Header = ({ searchedRepository, onSearchedRepositoryChange }: Searc
   const bg = useColorModeValue('#ffffff', '#6d6d6d');
   return (
     <Flex
-      height='80px'
+      height='10vh'
       flexDirection={{ base: "row-reverse", sm: "row-reverse", md: 'row' }}
       alignItems='center'
       justifyContent='space-between'

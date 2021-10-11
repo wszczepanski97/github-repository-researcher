@@ -1,0 +1,44 @@
+.loader {
+	max-width: 15rem;
+	width: 100%;
+	height: auto;
+	stroke-linecap: round;
+	height: 150px;
+}
+
+.circle-1, .circle-2, .circle-3, .circle-4 {
+	fill: none;
+	stroke-width: 3.5;
+	animation-name: preloader;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	transform-origin: 170px 170px;
+	will-change: transform;
+}
+
+.circle-1 {
+	stroke-dasharray: 550px;
+	animation-delay: -0.15s;
+}
+
+.circle-2 {
+	stroke-dasharray: 500px;
+	animation-delay: -0.3s;
+}
+
+.circle-3 {
+	stroke-dasharray: 450px;
+	animation-delay: -0.45s;
+}
+
+.circle-4 {
+	stroke-dasharray: 300px;
+	animation-delay: -0.6s;
+}
+
+@keyframes preloader {
+	50% {
+		transform: rotate(360deg);
+	}
+}

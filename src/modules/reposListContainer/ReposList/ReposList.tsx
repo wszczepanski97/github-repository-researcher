@@ -17,7 +17,7 @@ export const ReposList = ({ repos }: ReposListProps) => {
             row-gap='8px'
             border-bottom='1px solid #E4E8F0'
         >
-            {repos.map((data, index) => <ReposListItem key={data.id} name={data.name} owner={data.owner.login} index={index} />)}
+            {repos.map((data, index) => <ReposListItem key={data.id} name={data.name} url={data.url} owner={data.owner.login} index={index} />)}
         </Box>
     );
 }
