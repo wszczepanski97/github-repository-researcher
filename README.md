@@ -1,17 +1,14 @@
-# Zadanie 3 - Github repository search
+## Quick Overview
 
-Używajac [GitHub GraphQL API](https://docs.github.com/en/graphql) wykonaj SPA (Single Page Application), która pozwoli użytkownikowi na wyszukiwanie repozytoriów po ich nazwie.
+Add your token for Github API in file ./src/apollo/apollo-client.tsx in variable GITHUB_OAUTH_TOKEN. 
+Jak can you create your own token for Github API? https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
-## Założenia
+To run app: 
+```sh
+cd github-repository-researcher
+npm install/yarn install
+npm run build
+npm run start
+```
+and then run the browser and go to http://localhost:3000/
 
-- Przyjazny design;
-- Wyszukiwanie od 3 znaków;
-- Infinite scoll;
-- \*Next.js;
-- \*Query zaciągane z url.
-
-`* Dodatkowo punktowne`
-
-Dodaj swój token do api githuba w pliku ./src/apollo/apollo-client.tsx w stałej GITHUB_OAUTH_TOKEN. 
-
-Jak stworzyć swój token na github? https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
