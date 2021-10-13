@@ -1,7 +1,8 @@
 ## Quick Overview
 
 Add your token for Github API in file ./src/apollo/apollo-client.tsx in variable GITHUB_OAUTH_TOKEN. 
-Jak can you create your own token for Github API? https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+How can you create your own token for Github API? 
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
 To run app: 
 ```sh
